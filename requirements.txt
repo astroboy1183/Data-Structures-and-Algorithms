@@ -1,0 +1,4 @@
+# Project dependencies
+# Only the NumPy and two-dimensional array examples need this;
+# the pure array.array scripts run on a plain Python install.
+numpy>=1.26

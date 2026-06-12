@@ -4,19 +4,34 @@ A personal, hands-on collection of data structures and algorithms implemented in
 Python. Each top-level folder covers one topic, and the scripts inside build up
 from basic creation/traversal to common operations and algorithms.
 
+## Prerequisites
+
+- **Python 3.10+** (developed on Python 3.12)
+- **pip** and **venv** — bundled with Python. On Debian/Ubuntu you may first need
+  `sudo apt install python3-venv`.
+
 ## Getting started
 
 ```bash
-# Activate the virtual environment (created with: python3 -m venv .venv)
-source .venv/bin/activate
+# 1. Clone the repository
+git clone https://github.com/astroboy1183/Data-Structures-and-Algorithms.git
+cd Data-Structures-and-Algorithms
 
-# Run any script
+# 2. Create and activate a virtual environment
+python3 -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+# 3. Install dependencies (NumPy)
+pip install -r requirements.txt
+
+# 4. Run any script
 python 01_Arrays/01_arrays.py
 ```
 
-> **NumPy required for some scripts.** The NumPy and all two-dimensional examples
-> need NumPy. Install it with `pip install numpy` inside the activated environment,
-> or system-wide with `sudo apt install python3-numpy`.
+> **Note:** Only the NumPy and two-dimensional examples need NumPy; the pure
+> `array.array` scripts run on a plain Python install. Installing
+> `requirements.txt` covers everything. To leave the environment later, run
+> `deactivate`.
 
 ## Folders
 
@@ -49,7 +64,7 @@ points (search/insert/delete complexity, `list` vs NumPy, and common gotchas).
 ## Code style
 
 This project uses [Ruff](https://docs.astral.sh/ruff/) for linting and formatting;
-the rules live in [`ruff.toml`](ruff.toml). To check or format the code:
+the rules live in [`ruff.toml`](ruff.toml). Install it with `pip install ruff`, then:
 
 ```bash
 ruff check .     # lint
