@@ -1,0 +1,20 @@
+# Ruff configuration — https://docs.astral.sh/ruff/
+# Lints and formats this DSA practice code for quality and consistency.
+
+line-length = 88
+target-version = "py312"
+
+[lint]
+# A practical rule set for learning clean Python:
+#   E/W  pycodestyle  - style errors & warnings (PEP 8)
+#   F    pyflakes     - real bugs: unused imports/vars, undefined names
+#   I    isort        - keep imports sorted & grouped
+#   UP   pyupgrade    - suggest modern Python syntax
+#   B    bugbear      - catch likely mistakes / footguns
+#   SIM  simplify     - simpler, more readable equivalents
+select = ["E", "W", "F", "I", "UP", "B", "SIM"]
+
+[format]
+# Black-compatible formatting.
+quote-style = "double"
+indent-style = "space"
