@@ -3,7 +3,7 @@ import numpy as np
 twoDArray = np.array(
     ([1, 2, 3, 4], [1, 23, 25, 547], [45, 456, 345, 5785], [789, 345, 6789, 243])
 )
-print(twoDArray)
+print("2D array:\n", twoDArray)
 
 
 def accessElement(array, rowIndex, colIndex):
@@ -14,7 +14,7 @@ def accessElement(array, rowIndex, colIndex):
 
 
 ans = accessElement(twoDArray, 1, 2)
-print(ans)
+print("Element at [1][2]:", ans)
 
 ans1 = accessElement(twoDArray, 3, 1)
-print(ans1)
+print("Element at [3][1]:", ans1)

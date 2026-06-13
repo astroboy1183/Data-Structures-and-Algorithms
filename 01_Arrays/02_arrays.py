@@ -32,9 +32,9 @@ def binarySearch(array, target):
     return "Element not found"
 
 
-print(accessElement(my_array, 2))
-print(accessElement(my_array, 10))
-print(linearSearch(my_array, 3))
-print(linearSearch(my_array, 8))
-print(binarySearch(my_array, 3))
-print(binarySearch(my_array, 7))
+print("Access index 2 ->", accessElement(my_array, 2))
+print("Access index 10 ->", accessElement(my_array, 10))
+print("Linear search for 3 ->", linearSearch(my_array, 3))
+print("Linear search for 8 ->", linearSearch(my_array, 8))
+print("Binary search for 3 ->", binarySearch(my_array, 3))
+print("Binary search for 7 ->", binarySearch(my_array, 7))
